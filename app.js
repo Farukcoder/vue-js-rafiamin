@@ -7,12 +7,14 @@ new Vue({
         cars: ['Ford', 'Toyota'],
         robot: {
             name: "Md Omar Faruk"
-        }
+        },
+        src: "https://picsum.photos/id/237/200/300",
+        alt: "Dog Image"
     },
     methods: {
         greeting(){
             return this.title
         },
-        
+
     }
 })
