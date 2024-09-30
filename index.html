@@ -22,6 +22,16 @@
         <hr>
         <p v-text="myText"></p>
         <p v-html="myHtml"></p>
+        <p v-if="changeUser()">
+            You are allowed to enter
+        </p>
+        <p v-else-if="name == 'Md Omar Faruk'">
+            You Are good
+        </p>
+        <p v-else>
+            You are not allowed to enter
+        </p>
+        
     </div>
 
     <script src="app.js"></script>
