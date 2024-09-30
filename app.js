@@ -91,15 +91,33 @@
 //     }
 // })
 
-const temp = `<p>My name is {{ name }}</p>` 
+// const temp = `<p>My name is {{ name }}</p>` 
 
-const app = new Vue({
-    data: {
-        name: "Faruk"
+// const app = new Vue({
+//     data: {
+//         name: "Faruk"
+//     },
+//     template: temp
+// })
+
+// setTimeout(() => {
+//     app.$mount('#app')
+// }, 2000)
+
+Vue.component('faruk', {
+    data(){
+        return {
+            name: "Nasir"
+        }
     },
-    template: temp
+
+    template: `<p>{{ name }}</p>`
 })
 
-setTimeout(() => {
-    app.$mount('#app')
-}, 2000)
+
+const app = new Vue({
+    el: "#app",
+    data: {
+
+    }
+})
