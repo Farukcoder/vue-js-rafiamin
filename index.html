@@ -71,7 +71,7 @@
             <button type="submit">Submit</button>
         </form> -->
 
-        <form v-on:submit.prevent="handelFrom">
+        <!-- <form v-on:submit.prevent="handelFrom">
             <label for="">First Name:</label>
             <input type="text" v-model="formData.firstName">
             <hr>
@@ -81,7 +81,16 @@
             <hr>
 
             <button type="submit">Submit</button>
-        </form>
+        </form> -->
+
+        <button v-on:click="a++">Add A</button>
+        <button v-on:click="b++">Add B</button>
+
+        <p>A = {{ a }}</p>
+        <p>B = {{ b }}</p>
+
+        <p>Salary + A = {{ addToA }}</p>
+        <p>Salary + B = {{ addToB }}</p>
     </div>
 
     <script src="app.js"></script>

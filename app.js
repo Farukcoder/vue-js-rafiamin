@@ -24,7 +24,12 @@ new Vue({
         formData: {
             firstName: "",
             lastName: ""
-        }
+        },
+
+        a: 0,
+        b: 0,
+        salary: 10,
+
     },
     methods: {
         greeting(){
@@ -53,6 +58,17 @@ new Vue({
         handelFrom() {
             console.log(this.formData)
         }
+    },
 
+    computed: {
+        addToA(){
+            console.log('addToA')
+            return this.a + this.salary
+        },
+
+        addToB(){
+            console.log('addToB')
+            return this.b + this.salary
+        }
     }
 })
