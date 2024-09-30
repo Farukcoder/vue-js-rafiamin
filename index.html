@@ -10,8 +10,8 @@
 
 <body>
 
-    <div id="app">
-        <!-- <p>Title: {{ title }}</p>
+    <!-- <div id="app"> -->
+    <!-- <p>Title: {{ title }}</p>
         <p>{{ isItTrue }}</p>
         <p>{{ cars[0] }}</p>
         <p>{{ robot.name }}</p>
@@ -32,7 +32,7 @@
             You are not allowed to enter
         </p> -->
 
-        <!-- <p v-show="name === 'Md Omar Faruk'">
+    <!-- <p v-show="name === 'Md Omar Faruk'">
             Show it
         </p>
 
@@ -43,20 +43,20 @@
         <p v-for="(value, key, index) in robot">
             {{ index }} -  {{ key }} : {{ value }}
         </p> -->
-        <!-- 
+    <!-- 
         <p v-for="n in 10">
             {{ n }}
         </p> -->
 
-        <!-- <h1>{{ name }}</h1>
+    <!-- <h1>{{ name }}</h1>
         <h1 v-once>{{ name }}</h1>
         <h1>{{ update() }}</h1> -->
 
-        <!-- <h1>{{ name }}</h1>
+    <!-- <h1>{{ name }}</h1>
 
         <button v-on:click="updateName">click me</button> -->
 
-        <!-- <div v-on:mousemove="getCoord" class="box">
+    <!-- <div v-on:mousemove="getCoord" class="box">
             hover me
         </div>
         <p>X: {{ x }}</p>
@@ -66,12 +66,12 @@
         <h1>{{ name }}</h1>
 
         <button v-on:click.right="updateName('Faruk', $event)">click me</button> -->
-        <!-- <form v-on:submit.prevent="handelFrom">
+    <!-- <form v-on:submit.prevent="handelFrom">
             <input type="text">
             <button type="submit">Submit</button>
         </form> -->
 
-        <!-- <form v-on:submit.prevent="handelFrom">
+    <!-- <form v-on:submit.prevent="handelFrom">
             <label for="">First Name:</label>
             <input type="text" v-model="formData.firstName">
             <hr>
@@ -83,7 +83,7 @@
             <button type="submit">Submit</button>
         </form> -->
 
-        <!-- <button v-on:click="a++">Add A</button>
+    <!-- <button v-on:click="a++">Add A</button>
         <button v-on:click="b++">Add B</button>
 
         <p>A = {{ a }}</p>
@@ -92,15 +92,24 @@
         <p>Salary + A = {{ addToA }}</p>
         <p>Salary + B = {{ addToB }}</p> -->
 
-        <button @click="a++">Add A</button>
+    <!-- <button @click="a++">Add A</button>
         <p> A = {{ a }} </p>
         <hr>
 
         <a :href="link" target="_blank">click me</a>
         <hr>
-        <input type="text" v-model="name">
+        <input type="text" v-model="name"> -->
 
 
+    <!-- </div> -->
+
+    <div id="app1">
+        <p>This is the first Instance {{ value }}</p>
+        <button @click="changeValue">Click me</button>
+    </div>
+    <hr>
+    <div id="app2">
+        <p>This is the second Instance {{ value }}</p>
     </div>
 
     <script src="app.js"></script>
