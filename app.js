@@ -6,7 +6,9 @@ new Vue({
         isItTrue: true,
         cars: ['Ford', 'Toyota'],
         robot: {
-            name: "Md Omar Faruk"
+            name: "Md Omar Faruk",
+            age: 15,
+            allowAge: 18
         },
         src: "https://picsum.photos/id/237/200/300",
         alt: "Dog Image",
@@ -16,6 +18,7 @@ new Vue({
         name: "Md Omar Faruk",
         age: 15,
         allowAge: 18,
+        cars: ['Ford', 'Toyota', 'Honda'],
     },
     methods: {
         greeting(){

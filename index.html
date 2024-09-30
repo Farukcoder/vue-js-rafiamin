@@ -32,12 +32,20 @@
             You are not allowed to enter
         </p> -->
 
-        <p v-show="name === 'Md Omar Faruk'">
+        <!-- <p v-show="name === 'Md Omar Faruk'">
             Show it
         </p>
 
         <p v-show="name !== 'Md Omar Faruk'">
             Show it
+        </p>
+
+        <p v-for="(value, key, index) in robot">
+            {{ index }} -  {{ key }} : {{ value }}
+        </p> -->
+
+        <p v-for="n in 10">
+            {{ n }}
         </p>
 
 
