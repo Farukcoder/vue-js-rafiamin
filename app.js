@@ -36,13 +36,18 @@ new Vue({
             }, 2000)
         },
 
-        updateName(){
-            this.name = "Rafee"
+        updateName(newName){
+            this.name = newName
+            console.log(event)
         },
 
         getCoord(event){
             this.x = event.clientX
             this.y = event.clientY
+        },
+
+        handelFrom() {
+            console.log('submit form')
         }
 
     }
