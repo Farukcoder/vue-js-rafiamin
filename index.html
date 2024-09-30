@@ -66,11 +66,22 @@
         <h1>{{ name }}</h1>
 
         <button v-on:click.right="updateName('Faruk', $event)">click me</button> -->
-        <form v-on:submit.prevent="handelFrom">
+        <!-- <form v-on:submit.prevent="handelFrom">
             <input type="text">
             <button type="submit">Submit</button>
-        </form>
+        </form> -->
 
+        <form v-on:submit.prevent="handelFrom">
+            <label for="">First Name:</label>
+            <input type="text" v-model="formData.firstName">
+            <hr>
+
+            <label for="">Last Name:</label>
+            <input type="text" v-model="formData.lastName">
+            <hr>
+
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
     <script src="app.js"></script>

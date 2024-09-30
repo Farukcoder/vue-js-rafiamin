@@ -21,6 +21,10 @@ new Vue({
         cars: ['Ford', 'Toyota', 'Honda'],
         x: 0,
         y: 0,
+        formData: {
+            firstName: "",
+            lastName: ""
+        }
     },
     methods: {
         greeting(){
@@ -47,7 +51,7 @@ new Vue({
         },
 
         handelFrom() {
-            console.log('submit form')
+            console.log(this.formData)
         }
 
     }
