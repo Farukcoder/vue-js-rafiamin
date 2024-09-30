@@ -9,7 +9,10 @@ new Vue({
             name: "Md Omar Faruk"
         },
         src: "https://picsum.photos/id/237/200/300",
-        alt: "Dog Image"
+        alt: "Dog Image",
+        link: "https://www.google.com",
+        myText: "Hello World",
+        myHtml: "<strong>Hello World</strong>",
     },
     methods: {
         greeting(){

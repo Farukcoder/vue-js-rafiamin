@@ -16,8 +16,12 @@
         <p>{{ cars[0] }}</p>
         <p>{{ robot.name }}</p>
         <p>{{ greeting() }}</p>
-
         <img v-bind:src="src" v-bind:alt="alt">
+        <hr>
+        <a v-bind:href="link">Click me</a>
+        <hr>
+        <p v-text="myText"></p>
+        <p v-html="myHtml"></p>
     </div>
 
     <script src="app.js"></script>
