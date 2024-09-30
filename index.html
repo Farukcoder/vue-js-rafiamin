@@ -11,7 +11,7 @@
 <body>
 
     <div id="app">
-        <p>Title: {{ title }}</p>
+        <!-- <p>Title: {{ title }}</p>
         <p>{{ isItTrue }}</p>
         <p>{{ cars[0] }}</p>
         <p>{{ robot.name }}</p>
@@ -30,8 +30,17 @@
         </p>
         <p v-else>
             You are not allowed to enter
+        </p> -->
+
+        <p v-show="name === 'Md Omar Faruk'">
+            Show it
         </p>
-        
+
+        <p v-show="name !== 'Md Omar Faruk'">
+            Show it
+        </p>
+
+
     </div>
 
     <script src="app.js"></script>
