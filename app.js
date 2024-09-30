@@ -104,20 +104,63 @@
 //     app.$mount('#app')
 // }, 2000)
 
-Vue.component('faruk', {
-    data(){
-        return {
-            name: "Nasir"
-        }
-    },
+// Vue.component('faruk', {
+//     data(){
+//         return {
+//             name: "Nasir"
+//         }
+//     },
 
-    template: `<p>{{ name }}</p>`
-})
+//     template: `<p>{{ name }}</p>`
+// })
 
 
-const app = new Vue({
+// const app = new Vue({
+//     el: "#app",
+//     data: {
+
+//     }
+// })
+
+new Vue({
     el: "#app",
     data: {
+        name: "Faruk"
+    },
+    methods:{
+        updateName(){
+            this.name = "Nasir";
+        },
+        killIt(){
+            this.$destroy();
+        }
+    },
+    beforeCreate(){
+        console.log("Before Created")
+    },
 
+    created(){
+        console.log('created')
+    },
+
+    beforeMount() {
+        console.log("Before Mount")
+    },
+
+    mounted() {
+        console.log("mounted")
+    },
+
+    beforeUpdate(){
+        console.log('Before Updated')
+    },
+    updated(){
+        console.log('updated')
+    },
+    beforeDestroy(){
+        console.log('Before Destroy')
+    },
+    destroyed(){
+        console.log('destroy')
     }
 })
