@@ -43,19 +43,40 @@
         <p v-for="(value, key, index) in robot">
             {{ index }} -  {{ key }} : {{ value }}
         </p> -->
-<!-- 
+        <!-- 
         <p v-for="n in 10">
             {{ n }}
         </p> -->
 
-        <h1>{{ name }}</h1>
+        <!-- <h1>{{ name }}</h1>
         <h1 v-once>{{ name }}</h1>
-        <h1>{{ update() }}</h1>
+        <h1>{{ update() }}</h1> -->
 
+        <!-- <h1>{{ name }}</h1>
+
+        <button v-on:click="updateName">click me</button> -->
+
+        <div v-on:mousemove="getCoord" class="box">
+            hover me
+        </div>
+        <p>X: {{ x }}</p>
+        <p>Y: {{ y }}</p>
 
     </div>
 
     <script src="app.js"></script>
 </body>
+
+<style>
+    .box {
+        width: 400px;
+        height: 400px;
+        background-color: red;
+    }
+
+    /* .box:hover {
+        background-color: green;
+    } */
+</style>
 
 </html>

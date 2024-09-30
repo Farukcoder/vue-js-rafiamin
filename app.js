@@ -19,6 +19,8 @@ new Vue({
         age: 15,
         allowAge: 18,
         cars: ['Ford', 'Toyota', 'Honda'],
+        x: 0,
+        y: 0,
     },
     methods: {
         greeting(){
@@ -33,6 +35,15 @@ new Vue({
                 this.name = "Rafee"
             }, 2000)
         },
+
+        updateName(){
+            this.name = "Rafee"
+        },
+
+        getCoord(event){
+            this.x = event.clientX
+            this.y = event.clientY
+        }
 
     }
 })
