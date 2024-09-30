@@ -26,7 +26,13 @@ new Vue({
         },
         changeUser(){
             this.name = "Rafee" ? true : false
-        }
+        },
+
+        update() {
+            setTimeout(() => {
+                this.name = "Rafee"
+            }, 2000)
+        },
 
     }
 })

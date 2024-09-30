@@ -43,10 +43,14 @@
         <p v-for="(value, key, index) in robot">
             {{ index }} -  {{ key }} : {{ value }}
         </p> -->
-
+<!-- 
         <p v-for="n in 10">
             {{ n }}
-        </p>
+        </p> -->
+
+        <h1>{{ name }}</h1>
+        <h1 v-once>{{ name }}</h1>
+        <h1>{{ update() }}</h1>
 
 
     </div>
